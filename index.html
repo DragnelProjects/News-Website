@@ -5,9 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+        <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    
+    <nav>
+        <div class="title-logo">
+            <i class="bxf bx-news"></i>
+            <h3>Atlas Brief</h3>
+        </div>
+        <div class="nav-tags">
+            <div class="tag-box">
+                <a href="#">Top Headlines</a>
+            </div>
+            <div class="tag-box">
+                <a href="#">Categories</a>
+            </div>
+            <div class="tag-box">
+                <a href="#">Search</a>
+            </div>
+            <div class="tag-box">
+                <a href="#">Favorities</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--? CODES FOR LEFT SIDE NAVBAR -->
+    <aside>
+        <div class="upper-box">
+            <div class="upper-list">
+                <i class="bxf bx-globe-alt-2"></i>
+                <p>Country</p>
+            </div>
+            <div class="upper-list">
+                <i class="bxf bx-flag-alt"></i>
+                <select name="contry" id="counryName">
+                    <option value="Country">India</option>
+                    <option value="Country">India</option>
+                    <option value="Country">India</option>
+                </select>
+            </div>
+            <div class="upper-list">
+                <i class="bxf bx-translate"></i>
+                <select name="language" id="langName">
+                    <option value="English">englis</option>
+                    <option value="Hindi">hindi</option>
+                    <option value="Japanes">japanes</option>
+                    <option value="Chinese">chinese</option>
+                </select>
+            </div>
+                <div class="sort-list">
+                    <i class="bxf bx-dropdown"></i>
+                    <p>Sort By:</p>
+                    <select name="sorted" id="sortList">
+                    <option value="Latest">Latest</option>
+                    <option value="Viwes">Viwes</option>
+                </select>
+                </div>
+        </div>
+        <!-- ? CODES FOR LOWER SECTION START HERE  -->
+         <div class="lower-box">
+            <p>Categories</p>
+            <div class="list">
+                <button id="busiBtn"><i class="bxf bx-chart-line"></i>Business</button>
+            </div>
+            <div class="list">
+                <button id="techBtn"><i class="bxf bx-circuit-board"></i>Technology</button>
+            </div>
+            <div class="list">
+                <button id="healthBtn"><i class="bxf bx-pharmacy"></i>Health</button>
+            </div>
+            <div class="list">
+                <button id="sportBtn"><i class="bxf bx-cricket-ball"></i>Sports</button>
+            </div>
+            <div class="list">
+                <button id="entainBtn"><i class="bxf bx-movie-play"></i>Entertainment</button>
+            </div>
+         </div>
+    </aside>
+    <!-- ?CODES FOR RIGHT SIDE Navbar  -->
+     <aside class="right-navbar">
+        <!-- ? CODES FOR TRENDING NEWS  -->
+        <div class="trending-box">
+            <div class="trend-text">
+                <p>Trending News</p>
+            </div>
+            <div id="trendNews">
+                p
+            </div>
+        </div>
+        <!--? CODES FOR ARTICAL SEARCH  -->
+        <div class="artical-box">
+            <i class="bxf bx-scan-search"></i>
+            <input type="text" id="articalInput">
+        </div>
+        <!-- ?CODES FOR ARTICAL DISPLAY BOX -->
+         <div class="artical-display">
+            <p>Searched artical</p>
+            <p id="artiDisplay"></p>
+         </div>
+     </aside>
+
     <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
